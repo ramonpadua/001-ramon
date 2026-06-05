@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { ArrowRight, Play } from 'lucide-react'
 import { useScrollReveal } from '@/hooks/use-scroll-reveal'
 import { cn } from '@/lib/utils'
+import { LeadModal } from '@/components/LeadModal'
 
 export function Hero() {
   const { ref, isVisible } = useScrollReveal()
@@ -44,6 +45,14 @@ export function Hero() {
             Experimente Grátis
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
+          <LeadModal>
+            <Button
+              size="lg"
+              className="w-full sm:w-auto text-base h-14 px-8 bg-green-600 hover:bg-green-700 text-white shadow-xl shadow-green-600/25 hover:scale-105 transition-transform"
+            >
+              Entre em contato
+            </Button>
+          </LeadModal>
           <Button
             size="lg"
             variant="outline"
